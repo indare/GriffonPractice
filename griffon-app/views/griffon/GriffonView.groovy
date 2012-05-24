@@ -16,6 +16,12 @@ actions{
     closure: controller.&showAbout,
     mnemonic: 'A',
     accelerator: 'F1')
+
+    action(id:'showLaf',
+            name: 'show Look & Feel',
+            closure: controller.&showLaf,
+            mnemonic: 'L',
+            accelerator: 'ctrl L')
 }
 
 
@@ -31,6 +37,11 @@ application(title: 'Function Plotter',
         menu(mnemonic:'A', 'Action'){
             menuItem(action:paint)
         }
+
+        menu(mnemonic:'L','Look & Feel'){
+            menuItem(action:showLaf)
+        }
+
         glue()
         menu(mnemonic:'H', 'Help'){
             menuItem(action:about)

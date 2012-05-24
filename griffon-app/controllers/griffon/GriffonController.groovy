@@ -38,6 +38,11 @@ Groovy in Action''')
             lastY = y
         }
     }
+
+    def showLaf = { evt = null ->
+        lookandfeel.instancee.showLafDialog(app)
+    }
+
 }
 
 class Dynamo{
